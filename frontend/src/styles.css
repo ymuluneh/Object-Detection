@@ -1,0 +1,7 @@
+body { font-family: Arial, sans-serif; background:#f5f7fb; color:#111; }
+.container { max-width:1000px; margin:20px auto; padding:20px; background:white; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.08); }
+video { max-width: 100%; border-radius:8px; }
+canvas { position: absolute; left: 0; top: 0; }
+.controls { display:flex; gap:10px; margin-bottom:10px; align-items:center; flex-wrap:wrap; }
+.controls select, .controls input { padding:6px 8px; }
+.stats { margin-top:8px; }

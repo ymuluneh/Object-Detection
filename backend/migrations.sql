@@ -1,0 +1,21 @@
+-- Create database and tables for Task 2
+CREATE DATABASE IF NOT EXISTS object_tracking_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE object_tracking_db;
+
+CREATE TABLE IF NOT EXISTS tracks (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  track_id INT NOT NULL,
+  class_name VARCHAR(64),
+  first_seen TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  last_seen TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS detections (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  track_id INT,
+  class_name VARCHAR(64),
+  conf FLOAT,
+  x1 INT, y1 INT, x2 INT, y2 INT,
+  frame_index INT,
+  ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
