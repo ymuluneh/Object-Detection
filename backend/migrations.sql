@@ -1,4 +1,3 @@
--- Create database and tables for Task 2
 CREATE DATABASE IF NOT EXISTS object_tracking_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE object_tracking_db;
 
