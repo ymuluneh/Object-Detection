@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.controls-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px 20px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.control-group, .video-controls-group, .settings-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.control-button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  background-color: #3498db;
+  color: #fff;
+}
+
+.control-button:hover {
+  background-color: #2980b9;
+}
+
+.file-input-label {
+  background-color: #1abc9c;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.file-input-label:hover {
+  background-color: #16a085;
+}
+
+.file-input {
+  display: none;
+}
+
+.checkbox-label, .filter-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.filter-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.fps-display {
+  font-weight: bold;
+  color: #8e44ad;
+}
+
+.video-and-canvas-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-element {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.canvas-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
